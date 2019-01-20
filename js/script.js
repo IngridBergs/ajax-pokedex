@@ -2,11 +2,8 @@ function searchPok(){
 
 //first request
     var xhr1 = new XMLHttpRequest();
-    //var xhr2 = new XMLHttpRequest();
-
     var idSearch = document.getElementById("search").value;
     xhr1.open("GET", "https://pokeapi.co/api/v2/pokemon/" + idSearch, true);
-    //xhr2.open('GET', 'https://pokeapi.co/api/v2/pokemon-species/'+ idSearch , true);
 
     console.log(xhr1);
     xhr1.onload = function() {
